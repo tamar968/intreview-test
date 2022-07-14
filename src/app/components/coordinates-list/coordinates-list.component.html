@@ -1,0 +1,6 @@
+<div *ngFor="let c of coordinateSvc.coordinatesList">
+    <div class="card">
+        <app-coordinate [coordinate]="c['coordinate']"></app-coordinate>
+        <p><span>Comment: </span>{{ c['comment'] }}</p>
+    </div>
+</div>
