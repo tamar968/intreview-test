@@ -1,5 +1,5 @@
 <div>
-   <div><span>Timestemp: </span><span>{{ coordinate.timestamp }}</span></div> 
+   <div><span>Date: </span><span>{{ coordinate.timestamp*1000| date:'medium' }}</span></div> 
    <div><span>Iss Position: </span><span>{{ coordinate.iss_position.latitude }}</span>,<span>{{
         coordinate.iss_position.longitude }}</span></div> 
 </div>

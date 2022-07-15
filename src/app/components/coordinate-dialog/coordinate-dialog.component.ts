@@ -22,7 +22,6 @@ export class CoordinateDialogComponent implements OnInit {
 
   onNoClick(): void {
     this.dialogRef.close();
-    //this.coordinateSvc.coordinatesList.push(this.data);
   }
 
   saveInList():void{

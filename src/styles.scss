@@ -3,6 +3,14 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .card{
-    padding: 5px;
-    border-style: solid;
+    padding: 10px;
+    border: solid 2px gray;
+    max-width: 500px;
+    font-size: 2em;
+    line-height: normal;
+    margin: 5px;
+}
+.space-between{
+    display: flex;
+    justify-content: space-between;
 }

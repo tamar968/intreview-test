@@ -19,7 +19,6 @@ export class CurrentCoordinateComponent implements OnInit {
 
   openDialog(): void {
     this.dialog.open(CoordinateDialogComponent, {
-      width: '250px',
       data: {'coordinate': this.coordinateSvc.currentCoordinate, 'comment': this.comment}
     });
   }

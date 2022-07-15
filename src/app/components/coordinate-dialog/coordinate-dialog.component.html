@@ -1,11 +1,15 @@
-<app-coordinate [coordinate]="data.coordinate"></app-coordinate>
-
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Write your comment</mat-label>
+<h2>Write your comment</h2>
+<div class="card">
+    <app-coordinate [coordinate]="data.coordinate"></app-coordinate>
+</div>
+<div>
+    <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Write your comment here</mat-label>
     <textarea matInput [(ngModel)]="data.comment"></textarea>
   </mat-form-field>
-<button mat-button (click)="onNoClick()">Cancel</button>
-<button mat-button (click)="saveInList()" cdkFocusInitial>Ok</button>
-
-
+</div>
+<div class="space-between">
+    <button mat-button (click)="onNoClick()">Cancel</button>
+    <button mat-button (click)="saveInList()" cdkFocusInitial>Ok</button>
+</div>
 
